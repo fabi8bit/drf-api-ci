@@ -25,15 +25,15 @@ class ProfileDetail(APIView):
             raise Http404
 
     def get(self, request, pk):
-        profiles = self.get_object(pk)
+        profile = self.get_object(pk)
         serializer = ProfileSerializer(
-            profiles, context={'request':request})
+            profile, context={'request':request})
         return Response(serializer.data)
 
     def put(self, request, pk):
-        profiles = self.get_object(pk)
+        profile = self.get_object(pk)
         serializer = ProfileSerializer(
-            profiles, data=request.data, context={'request':request})
+            profile, data=request.data, context={'request':request})
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
