@@ -72,8 +72,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
     '8000-fabi8bit-drfapici-m8atn5a4rak.ws-eu103.gitpod.io',
     '8000-fabi8bit-drfapici-m8atn5a4rak.ws-eu104.gitpod.io',
-    'drf-app-ci.herokuapp.com',
-    'drf-app-ci-dd26f820fd5b.herokuapp.com/'
+    'drf-app-ci-dd26f820fd5b.herokuapp.com'
     ]
 
 
